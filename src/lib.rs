@@ -40,9 +40,9 @@ extern crate graphene;
 extern crate gsk4 as gsk;
 extern crate pango;
 
-#[cfg(any(feature = "futures", feature = "dox"))]
+#[cfg(feature = "futures")]
 extern crate fragile;
-#[cfg(any(feature = "futures", feature = "dox"))]
+#[cfg(feature = "futures")]
 extern crate futures;
 
 #[allow(unused_imports)]
