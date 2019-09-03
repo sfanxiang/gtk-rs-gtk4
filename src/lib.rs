@@ -40,10 +40,10 @@ extern crate graphene;
 extern crate gsk4 as gsk;
 extern crate pango;
 
-#[cfg(feature = "futures")]
+#[cfg(any(feature = "futures", feature = "dox"))]
 extern crate fragile;
-#[cfg(feature = "futures")]
-extern crate futures_core;
+#[cfg(any(feature = "futures", feature = "dox"))]
+extern crate futures;
 
 #[allow(unused_imports)]
 use glib::{Cast, Continue, Error, IsA, Object, StaticType, ToValue, Type, TypedValue, Value};
